@@ -9,8 +9,6 @@ Demás accesorios:
 - Los sensores y accesorios se reemplazan hasta que fallan.
 
 ### Gusanos helicoidales
-![[Pasted image 20260225084844.jpg]]
-![[Screenshot_20260225-103135.MJ PDF_1.png]]
 Se deben realizar inspecciones periódicas de la siguiente manera:
 1) Artesa. Revisar si hay desgaste y alineación. Apriete todos los pernos.
 2) Ejes. Checar si hay desgaste. Revisar si hay alargamiento o deterioro del agujero del tornillo.
