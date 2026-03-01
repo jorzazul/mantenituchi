@@ -1,11 +1,11 @@
-Nombre,Código
-Caldera,
-Compresor de tornillo de aire,
-Subestaciones,
-Compresor de tornillo de refrigeración,
-Gusanos Helicoidales,
-CCM,
-Compresores de Pistón,
-Elevador de Cangilones,
-Torre de Enfriamiento,
-Bandas Transportadoras,
+Código,Nombre
+SER-01,Caldera
+SER-02,Compresor de tornillo de aire
+ELE-01,Subestaciones
+SER-03,Compresor de tornillo de refrigeración
+PRO-01,Gusanos Helicoidales
+ELE-02,Centro de Control de Motores
+SER-04,Compresores de Pistón
+PRO-02,Elevador de Cangilones
+SER-05,Torre de Enfriamiento
+PRO-03,Bandas Transportadoras
