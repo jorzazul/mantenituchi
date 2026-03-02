@@ -6,7 +6,7 @@ nombre = input("Ingrese su maquina: ")
 # Código del formato de OT's
 class OT(FPDF):
   def header(self):
-    self.image("LOGO_TEC_PNG_OK-2534661981.png", 10, 8, 33)
+    self.image("data/LOGO_TEC.png", 10, 8, 33)
     self.set_font("helvetica", style="B", size=15)
     self.cell(80)
     self.cell(30, 10, "ORDEN DE TRABAJO DE MANTENIMIENTO", 1, align="C")
@@ -29,4 +29,4 @@ class OT(FPDF):
 pdf=OT(orientation="P", unit="mm", format="A4")
 pdf.add_page()
 pdf.llenar_datos_equipos(nombre="Torre de enfriamiento", codigo="SER-02")
-pdf.output("data/OT.pdf")
+pdf.output(f"OT_{nombre}.pdf")

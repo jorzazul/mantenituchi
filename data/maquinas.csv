@@ -1,11 +1,17 @@
 codigo,nombre,actividad de mantenimiento
-SER-01,Caldera
-SER-02,Compresor de tornillo de aire
-ELE-01,Subestaciones
-SER-03,Compresor de tornillo de refrigeración
-PRO-01,Gusanos Helicoidales
-ELE-02,Centro de Control de Motores
-SER-04,Compresores de Pistón
-PRO-02,Elevador de Cangilones
-SER-05,Torre de Enfriamiento
-PRO-03,Bandas Transportadoras
+SER-01,Caldera,
+SER-02,Compresor de tornillo de aire,
+ELE-01,Subestaciones,
+SER-03,Compresor de tornillo de refrigeración,
+PRO-01,Gusanos Helicoidales,"    Artesa. Revisar si hay desgaste y alineación. Apriete todos los pernos.
+    Ejes. Checar si hay desgaste. Revisar si hay alargamiento o deterioro del agujero del tornillo.
+    Alabes. Inspeccionar los bordes para saber si hay desgaste o daño.
+    Tornillos y tuercas. Examínelos todos para saber si hay desgaste y estiramiento.
+    Sellos. Revise salida, ajuste y desgaste.
+    Guardas. Nivel de aceite (si fuera aplicable). Tuercas y tornillos de estiramiento.
+    Rodamientos. Lubricación."
+ELE-02,Centro de Control de Motores,
+SER-04,Compresores de Pistón,
+PRO-02,Elevador de Cangilones,
+SER-05,Torre de Enfriamiento,
+PRO-03,Bandas Transportadoras,
