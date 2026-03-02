@@ -1,17 +1,33 @@
 codigo,nombre,actividad de mantenimiento
-SER-01,Caldera,
-SER-02,Compresor de tornillo de aire,
-ELE-01,Subestaciones,
+SER-01,Caldera,"Nivel de agua. Verificar nivel correcto en mirilla.
+Presión/Temperatura. Leer manómetros dentro de rango.
+Purga de fondo. Realizar según procedimiento.
+Fugas. Inspeccionar visualmente combustible, agua o vapor.
+Tratamiento de agua. Verificar niveles de químicos.
+Quemador. Limpiar filtro, verificar llama.
+"
+SER-02,Compresor de tornillo de aire,"Fugas de aire... inspección visual y auditiva
+Drenaje de condensado... Vaciar el depósito
+Correas de transmisión... Inspeccionar tensión y desgaste
+Acoplamientos... Inspeccionar desgaste
+Aceite y filtro de aceite...Reemplazar"
+ELE-01,Subestaciones,"Transformadores… Inspección visual de fugas de aceite, nivel, temperatura y ruidos anormales.
+Interruptores de potencia… Revisar contactos, mecanismo de apertura/cierre y estado general.
+Sistema de puesta a tierra… Medir resistencia y verificar conexiones firmes.
+Aisladores y barras… Limpieza y revisión de fisuras o puntos calientes.
+Tableros de protección y control… Verificar relevadores, conexiones y funcionamiento correcto."
 SER-03,Compresor de tornillo de refrigeración,
-PRO-01,Gusanos Helicoidales,"    Artesa. Revisar si hay desgaste y alineación. Apriete todos los pernos.
-    Ejes. Checar si hay desgaste. Revisar si hay alargamiento o deterioro del agujero del tornillo.
-    Alabes. Inspeccionar los bordes para saber si hay desgaste o daño.
-    Tornillos y tuercas. Examínelos todos para saber si hay desgaste y estiramiento.
-    Sellos. Revise salida, ajuste y desgaste.
-    Guardas. Nivel de aceite (si fuera aplicable). Tuercas y tornillos de estiramiento.
-    Rodamientos. Lubricación."
+PRO-01,Gusanos Helicoidales,"Artesa. Revisar si hay desgaste y alineación. Apriete todos los pernos.
+Ejes. Checar si hay desgaste. Revisar si hay alargamiento o deterioro del agujero del tornillo.
+Alabes.Inspeccionar los bordes para saber si hay desgaste o daño.
+Tornillos y tuercas. Examínelos todos para saber si hay desgaste y estiramiento.
+Sellos. Revise salida, ajuste y desgaste.
+Guardas. Nivel de aceite (si fuera aplicable). Tuercas y tornillos de estiramiento.
+Rodamientos. Lubricación."
 ELE-02,Centro de Control de Motores,
 SER-04,Compresores de Pistón,
 PRO-02,Elevador de Cangilones,
 SER-05,Torre de Enfriamiento,
-PRO-03,Bandas Transportadoras,
+PRO-03,Bandas Transportadoras,"Banda (superficie inferior y superior)...Inspeccionar en busca de cortes, hendiduras u otros signos de daño no visibles a simple vista en la operación diaria
+Tensión de la banda... Verificar la tensión. Una tensión incorrecta (especialmente en bandas modulares) causa desgaste prematuro. En bandas ThermoDrive, se recomienda operar sin tensión
+Limpieza profunda... Realizar una limpieza programada del transportador, incluyendo estructura, guías y parte inferior de la banda"
