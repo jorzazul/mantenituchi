@@ -1,4 +1,4 @@
-codigo,maquina,componente,frecuencia,refacciones,tarea
+Codigo,Maquina,Componente,Frecuencia,Refacciones,Tarea
 SER-01,Caldera,Purga de fondo,,,Realizar según procedimiento.
 SER-01,Caldera,Nivel de agua,,,Verificar nivel correcto en mirilla.
 SER-01,Caldera,Presión/Temperatura,,,Leer manómetros dentro de rango.
