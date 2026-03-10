@@ -1,10 +1,10 @@
 numero,nombre,apellidos,puesto,correo
 TM01,David,Rosas Cuevas,Mecánico,
 ,Roberto,Lopez Guzman,Electricista
-,Alexis Noel,Garate Rodriguez, Mecánico
-,Jose Angel,Gonzalez Rivera, Electricista
-,Elliot,Jacobo Borjoquez,Mecatronico,L22170454@culiacan.tecnm.mx
-,Jordi Jesús,Zavala Beltrán, Electrónico,
-,Jorge,
-,Fausto Gabriel,
-,Jesús Ivan,Fernandez Angulo, 
+TM02,Alexis Noel,Garate Rodriguez, Mecánico
+TM03,Elliot,Jacobo Borjoquez,Mecánico,L22170454@culiacan.tecnm.mx
+,Jordi Jesús,Zavala Beltrán, Electricista,
+TM03,Geovanni, Gonzalez Pulgarin,Mecanico,L20170439@culiacan.tecnm.mx
+,Fausto Gabriel,Booruel Salazar,Electricista,
+TM04,Jesús Ivan,Fernandez Angulo,Mecánico,L22170454@culiacan.tecnm.mx
+TM05,Carlos Guadalupe,Sillas Rivera,Mecánico,L211707@culiacan.tecnm.mx
