@@ -1,5 +1,3 @@
-folio,codigo_maquina,fecha_generacion,estado
-0001,SER-01,2026-3-9,Generada
-0002,SER-03,2026-3-9,Generada
-0003,PRO-02,2026-3-9,Generada
-0004,PRO-01,2026-3-9,Generada
+folio,codigo_maquina,fecha_generacion,estado,ruta
+0001,SER-02,2026-3-9,Generada,data/ordenes_trabajo/0001.pdf
+0002,PRO-02,2026-3-9,Generada,data/ordenes_trabajo/0002.pdf

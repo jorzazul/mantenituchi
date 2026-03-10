@@ -4,6 +4,7 @@ import datetime
 import pytz
 from fpdf import FPDF
 import pandas as pd
+from pathlib import Path
 def obtener_fecha_actual():
   Fecha_Year = Fecha_Actual.year
   Fecha_Month = Fecha_Actual.month
@@ -16,17 +17,27 @@ def obtener_hora_actual():
   Hora_Hour = Fecha_Actual.hour
   horaOrdenada = f"{Hora_Hour:02d}:{Hora_Minute:02d}"
   return horaOrdenada
+
+#incompleto
+def gen_estructura_carpetas():
+  print("\n--- Creando carpetas con respecto a la base de datos... ---\n")
+  carpeta_base = Path('ordenes_trabajo')
+  for nombre_maquina in df_maqs["maquina"].intertuples().unique:
+    nombre_maquina = f"{nombre_maquina.codigo}_{nombre_maquina.maquina}"
+    ruta_carpeta = carpeta_base / nombre_maquina
+    ruta_carpeta.mkdir(parents=True, exist_ok=True)
+
 def generar_folio():
-    archivo_historial = "historial_ots.csv"
-    if not os.path.exists(archivo_historial) or os.stat(archivo_historial).st_size == 0:
+  archivo_historial = "historial_ots.csv"
+  if not os.path.exists(archivo_historial) or os.stat(archivo_historial).st_size == 0:
+    return 1
+  else:
+    df_historial = pd.read_csv(archivo_historial)
+    if df_historial.empty:
       return 1
-    else:
-      df_historial = pd.read_csv(archivo_historial)
-      if df_historial.empty:
-        return 1
-      ultimo_folio = df_historial["folio"].max()
-      nuevo_folio = ultimo_folio + 1
-      return nuevo_folio
+    ultimo_folio = df_historial["folio"].max()
+    nuevo_folio = ultimo_folio + 1
+    return nuevo_folio
       
 class OT(FPDF):
   def header(self):
@@ -108,18 +119,20 @@ if tareas_maquina.empty:
   print(f"Error: El código que ha ingresado ({codigo_input}) no coincide con la base de datos.")
 else:
   nombre_maquina = tareas_maquina['maquina'].iloc[0]
-  print(f"\n--- Preparando PDF para: {nombre_maquina} ({codigo_input}) ---\n")
   n_folio = generar_folio()
   folio_pdf = f"{n_folio:04d}"
+  print(f"\n--- Preparando PDF para: {nombre_maquina} ({codigo_input}) ---\n")
   pdf=OT(orientation="P", unit="mm", format="A4")
   pdf.add_page()
   pdf.llenar_datos_equipos(nombre_maquina, codigo_input)
-  pdf.output(f"data/ordenes_trabajo/{folio_pdf}.pdf")
+  ruta_ot = f"data/ordenes_trabajo/{folio_pdf}.pdf"
+  pdf.output(ruta_ot)
   nueva_orden = pd.DataFrame([{
-    'folio' : folio_pdf,
+    'folio' : f"{folio_pdf}",
     'codigo_maquina' : codigo_input,
     'fecha_generacion' : fechaActual,
-    'estado' : 'Generada'
+    'estado' : 'Generada',
+    'ruta' : f"{ruta_ot}"
   }])
   nueva_orden.to_csv('historial_ots.csv', mode='a', header=not os.path.exists('historial_ots.csv'), index=False, encoding='utf-8')
   print("PDF generado exitosamente.")
