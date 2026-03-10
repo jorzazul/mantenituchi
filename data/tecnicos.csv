@@ -1,10 +1,10 @@
-numero,nombre,apellidos,puesto
-TM01,David,Rosas Cuevas,Mecánico
+numero,nombre,apellidos,puesto,correo
+TM01,David,Rosas Cuevas,Mecánico,
 ,Roberto,Lopez Guzman,Electricista
 ,Alexis Noel,Garate Rodriguez, Mecánico
-,Jose Angel, Gonzalez Rivera, Electricista
-,Jose,
-,Jordi Jesús, Zavala Beltrán, Electrónico
+,Jose Angel,Gonzalez Rivera, Electricista
+,Elliot,Jacobo Borjoquez,Mecatronico,L22170454@culiacan.tecnm.mx
+,Jordi Jesús,Zavala Beltrán, Electrónico,
 ,Jorge,
 ,Fausto Gabriel,
-,Jesús Ivan, Fernandez Angulo, 
+,Jesús Ivan,Fernandez Angulo, 
